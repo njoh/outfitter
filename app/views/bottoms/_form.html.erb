@@ -1,0 +1,21 @@
+<%= form_for(@bottom) do |f| %>
+  <% if @bottom.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bottom.errors.count, "error") %> prohibited this bottom from being saved:</h2>
+
+      <ul>
+      <% @bottom.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :picture %><br>
+    <%= f.text_field :picture %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

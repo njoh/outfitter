@@ -18,8 +18,8 @@ Rails.application.routes.draw do
 
   resources :tops
 
-  get 'home', to: 'home#index', as: :home
+  get 'home', to: 'home#home', as: :home
   get 'home/closet', to: 'home#closet', as: :closet
 
-  root to: 'home#index'
+  root to: 'home#home'
 end

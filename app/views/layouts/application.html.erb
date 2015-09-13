@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Outfitter</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Outfitter</title>
+    <%= stylesheet_link_tag "application" %>
+    <!-- Bootstrap Core CSS -->
+    <%= stylesheet_link_tag "bootstrap.min.css" %>
+ <!--    <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Custom CSS -->
+    <%= stylesheet_link_tag "mystyles.css" %>
+    <!-- <link href="css/mystyles.css" rel="stylesheet"> -->
+
+    <!-- Custom Fonts -->
+    <%= stylesheet_link_tag "font-awesome.min.css" %>
+    <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic" %>
+    <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'> -->
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<%= render :partial => "partials/navbar" %>
 <%= yield %>
+<!-- jQuery -->
+<%= javascript_include_tag "jquery.js" %>
+
+    <!-- Bootstrap Core JavaScript -->
+    <%= javascript_include_tag "bootstrap.min.js" %>
+
+    <!-- Plugin JavaScript -->
+    <%= javascript_include_tag "jquery.easing.min.js" %>
+
+    <!-- Custom Theme JavaScript -->
+     <%= javascript_include_tag "app.js" %>
 
 </body>
 </html>

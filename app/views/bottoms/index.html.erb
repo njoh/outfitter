@@ -1,24 +1,17 @@
-<h1>Listing bottoms</h1>
+<div class="container content-section">
+        <div class="row">
+          <div class="col-md-4">
+            <h1>Bottoms</h1>
+          </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <p>Add Bottom: <input type="file" id="capture" accept="image/*; capture=camera"></p>
+          </div>
+          <span id="status"></span>
+          
+        </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Picture</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @bottoms.each do |bottom| %>
-      <tr>
-        <td><%= bottom.picture %></td>
-        <td><%= link_to 'Show', bottom %></td>
-        <td><%= link_to 'Edit', edit_bottom_path(bottom) %></td>
-        <td><%= link_to 'Destroy', bottom, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    </div>
 
 <br>
 

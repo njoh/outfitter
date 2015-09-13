@@ -19,5 +19,14 @@ module Outfitter
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    config.assets.precompile += %w( bootstrap.min.css )
+    config.assets.precompile += %w( mystyles.css )
+    config.assets.precompile += %w( font-awesome.min.css )
+    config.assets.precompile += %w( jquery.js )
+    config.assets.precompile += %w( bootstrap.min.js )
+    config.assets.precompile += %w( jquery.easing.min.js )
+    config.assets.precompile += %w( app.js )
+    config.assets.precompile += %w( swiper.min.css )
+    config.assets.precompile += %w( swiper.min.js )
   end
 end

@@ -47,9 +47,11 @@
                 <%= button_to "Choose your OOTD", new_outfit_path, :method => "get" %>
                 <%#= link_to(new_outfit_path) do %>
                 <!-- <button role="button" type="button" id="ootdButton" class="btn-lg btn-default">Choose your OOTD</a></button> <%#end%> <br><br> -->
-                <%= link_to(outfits_path) do %>
-                <button role="button" type="button" id="prevButton" class="btn-lg btn-default">Previous Outfits</a></button> <%end%> <br><br>
-                <button role="button" type="button" id="closetButton" class="btn-lg btn-default"><a href="closet.html">My Closet</a></button> <br><br>
+                <%= button_to "Previous Outfits", outfits_path, :method => "get" %>
+                <%#= link_to(outfits_path) do %>
+                <!-- <button role="button" type="button" id="prevButton" class="btn-lg btn-default">Previous Outfits</a></button> <%#end%> <br><br> -->
+                <%= button_to "My Closet", closet_path, :method => "get" %>
+                <!-- <button role="button" type="button" id="closetButton" class="btn-lg btn-default"><a href="closet.html">My Closet</a></button> <br><br> -->
             </div>
 
             <div class= "col-md-4"></div>

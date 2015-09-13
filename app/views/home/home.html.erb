@@ -1,0 +1,80 @@
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="images/letter.png" type="image/x-icon">
+    <link rel="icon" href="images/letter.png" type="image/x-icon">
+
+    <title>Outfitter</title>
+
+    <!-- fancybox plugin -->
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/mystyles.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="indexBody">
+    <br><br>
+    <div class="container content-section">
+        <div class="row">
+
+            <div class="col-md-4"></div>
+
+            <div class="col-md-4 center">
+                <%= image_tag 'logo.png' %>
+                <!-- <img id= "homeLogo" class="img-responsive" src="/assets/images/logo.png"> -->
+                <br>
+                <br>
+
+                <%= link_to(new_outfit_path) do %>
+                <button role="button" type="button" id="ootdButton" class="btn-lg btn-default">Choose your OOTD</a></button> <%end%> <br><br>
+                <%= link_to(outfits_path) do %>
+                <button role="button" type="button" id="prevButton" class="btn-lg btn-default">Previous Outfits</a></button> <%end%> <br><br>
+                <button role="button" type="button" id="closetButton" class="btn-lg btn-default"><a href="closet.html">My Closet</a></button> <br><br>
+            </div>
+
+            <div class= "col-md-4"></div>
+
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+</body>

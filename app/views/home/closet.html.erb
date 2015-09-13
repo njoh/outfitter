@@ -1,5 +1,3 @@
-<h1>New outfit</h1>
-
 <head>
 
     <meta charset="utf-8">
@@ -23,6 +21,7 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -55,13 +54,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a id="active" href="ootd.html">Choose your OOTD</a>
+                        <a href="ootd.html">Choose your OOTD</a>
                     </li>
                     <li>
                         <a href="archive.html">Previous Outfits</a>
                     </li>
                     <li>
-                        <a href="closet.html">My Closet</a>
+                        <a id="active" href="closet.html">My Closet</a>
                     </li>
                     <li>
                         <a href="about.html">About</a>
@@ -75,7 +74,18 @@
 
     <div class="container content-section">
         <div class="row">
+          <!-- <p>Capture image: <input type="file" id="capture" accept="image/*; capture=camera"></p> -->
 
+          Top Name: <input type= 'text' id='tname' name='topName'> <br><br>
+
+      		<!-- Buttons for adding new event -->
+      		<form id='putForm'>
+      			<button>Add New Top</button>
+      		</form>
+
+          <!-- Shows success status when event is added -->
+      		<span id="status"></span>
+          
         </div>
 
     </div>
@@ -84,7 +94,7 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            
+
         </div>
     </footer>
 
@@ -101,6 +111,8 @@
     <script src="js/app.js"></script>
     <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
-</body>
+    <script src='models/mymongo.js'></script>
+    <script src='routes/dbRoutes.js'></script>
+    <script src='js/form.js'></script>
 
-<%= link_to 'Back', outfits_path %>
+</body>

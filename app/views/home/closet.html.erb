@@ -42,7 +42,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="index.html">
-                    <img class="img-responsive" id="namelogo" src="images/logo.png">
+                    <%= link_to image_tag('logo.png'), home_path %>
                 </a>
             </div>
 
@@ -54,13 +54,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a href="ootd.html">Choose your OOTD</a>
+                        <%= link_to 'Choose your OOTD', new_outfit_path %>
                     </li>
                     <li>
-                        <a href="archive.html">Previous Outfits</a>
+                        <%= link_to 'Previous Outfits', outfits_path %>
                     </li>
                     <li>
-                        <a id="active" href="closet.html">My Closet</a>
+                        <%= link_to 'My Closet', closet_path %>
                     </li>
                     <li>
                         <a href="about.html">About</a>
